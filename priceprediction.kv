@@ -1,0 +1,17 @@
+# priceprediction.kv
+<PricePredictionApp>:
+    orientation: 'vertical'
+    
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: 'Feature 1:'
+        TextInput:
+            id: input1
+            
+    Button:
+        text: 'Predict'
+        on_press: app.predict(self)
+        
+    Label:
+        id: output_label
